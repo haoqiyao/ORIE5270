@@ -1,9 +1,5 @@
 import numpy as np
 
-class BlankObj:
-    def __repr__(self):
-        return ""
-
 class Tree(object):
     def __init__(self, root):
         self.root = root
