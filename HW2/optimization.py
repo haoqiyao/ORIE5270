@@ -20,6 +20,7 @@ trial1 = [5, 2, 7]
 trial2 = [-1, 1, 1]
 trial3 = [8, 2, 9]
 trials = [trial1, trial2, trial3]
+
 result = []
 for i in trials:
     #optimization product
