@@ -71,18 +71,3 @@ class Node(object):
         self.value = value
         self.left = left
         self.right = right
-
-
-if __name__ == '__main__':
-    first = Node(1, None, None)
-    second = Node(2, None, None)
-    third = Node(3, None, None)
-    fourth = Node(4, None, None)
-
-    first.left = second
-    first.right = third
-    second.left = fourth
-
-    tree = Tree(first)
-
-    print(tree.print_tree(first))
