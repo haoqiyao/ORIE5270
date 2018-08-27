@@ -89,12 +89,14 @@ def find_negative_circles(dictionary, source):
                 while prev[start] != curr_v:
                     path.append(prev[start])
                     start = prev[start]
-    
-    return negative_cycle_flag, path
+
+    if negative_cycle_flag:
+        return path
+    else:
+        return None
 
 dictionary = get_structure("bellman.txt")
 source = 0
-negative_cycle_flag, path = find_negative_circles(dictionary, source)
+path = find_negative_circles(dictionary, source)
 
-print("Does the map have negative cycle? " + str(negative_cycle_flag))
 print("The negative cycle path is: " + str(path))
