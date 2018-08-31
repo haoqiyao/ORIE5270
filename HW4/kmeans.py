@@ -30,7 +30,7 @@ def kmeans(Data, Centroid, iterations):
 
     
     #write the centroid data into the txt file
-    f = open("final_centroid.txt", "w")
+    f = open("kmeans_result.txt", "w")
     
     for cent in centroid_curr:
         
